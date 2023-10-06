@@ -1,10 +1,11 @@
 import React from 'react'
+
 import MenuProductComponent from './MenuProductComponent'
 
 export default function MenuSection() {
   return (
     <section id="menu">
-      <div className="w-full h-auto bg-slate-800 flex flex-col">
+      <div className="w-full h-auto flex flex-col">
         <div className="w-auto my-5 md:my-10 h-auto">
           <h2 className="text-white text-3xl font-bold md:text-5xl text-center font-lora">
             Our Popular Menu

@@ -1,9 +1,9 @@
-import Layout from '@/layout/Layout'
-import HeroSection from '@/components/sections/HeroSection'
 import AboutSection from '@/components/sections/AboutSection'
+import FindUsSection from '@/components/sections/FindUsSection'
+import HeroSection from '@/components/sections/HeroSection'
 import MenuSection from '@/components/sections/MenuSection'
 import WorkingHoursSection from '@/components/sections/WorkingHoursSection'
-import FindUsSection from '@/components/sections/FindUsSection'
+import Layout from '@/layout/Layout'
 
 export default function Home() {
   return (

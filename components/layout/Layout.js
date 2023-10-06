@@ -23,7 +23,9 @@ export default function Layout({ children, title = null }) {
         <link rel="icon" href="/favicons/fav-228.ico" sizes="228x228" />
       </Head>
       <div
-        className={`font-sans antialiased bg-slate-800 flex flex-col ${dev ? 'debug-screens' : ''}`}
+        className={`scroll-smooth font-lora antialiased bg-slate-800 flex flex-col ${
+          dev ? 'debug-screens' : ''
+        }`}
       >
         {/* Navigation here */}
         <Navigation />

@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+
 import { Lora } from 'next/font/google'
 import { Karla } from 'next/font/google'
 import { DefaultSeo } from 'next-seo'

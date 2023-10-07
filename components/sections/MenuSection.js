@@ -1,6 +1,6 @@
 import React from 'react'
 
-import MenuProductComponent from './MenuProductComponent'
+import MenuProduct from '../MenuProduct'
 
 export default function MenuSection() {
   return (
@@ -12,7 +12,7 @@ export default function MenuSection() {
           </h2>
         </div>
         <div className="w-auto mx-10 md:1/2 lg:w-2/3 md:mx-10 lg:mx-auto flex flex-col items-center justify-between md:flex-row">
-          <MenuProductComponent />
+          <MenuProduct />
         </div>
       </div>
     </section>

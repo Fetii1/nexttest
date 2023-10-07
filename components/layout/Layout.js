@@ -1,27 +1,29 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Footer from './Footer'
 import { Component, use } from 'react'
+
+import Footer from './Footer'
 
 const Navigation = dynamic(() => import('@/components/layout/Navigation'), { ssr: false })
 
 export default function Layout({ children, title = null }) {
   const dev = process.env.NODE_ENV === 'development'
-  const router = useRouter()
-  if (router.asPath == '/#about') {
-    router.asPath = 'About'
-  } else if (router.asPath == '/#menu') {
-    router.asPath = 'Menu'
-  } else if (router.asPath == '/#contact') {
-    router.asPath = 'Contact'
+  const routerHome = useRouter()
+  let menuTitle = routerHome.asPath
+  if (routerHome.asPath == '/#about') {
+    menuTitle = 'About'
+  } else if (routerHome.asPath == '/#menu') {
+    menuTitle = 'Menu'
+  } else if (routerHome.asPath == '/#contact') {
+    menuTitle = 'Contact'
   } else {
-    router.asPath = 'Home'
+    menuTitle = 'Home'
   }
   return (
     <>
       <Head>
-        <title>{title ? `${title} - ${router.asPath}` : 'Next Starter'}</title>
+        <title>{title ? `${title} - ${menuTitle}` : 'Next Starter'}</title>
 
         {/* Favicons */}
         <link rel="icon" href="/favicons/fav-32.ico" sizes="32x32" />

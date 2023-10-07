@@ -1,13 +1,13 @@
 import React from 'react'
 
-import ButtonComponent from './ButtonComponent'
+import Button from '../Button'
 
 export default function WorkingHoursSection() {
   return (
     <div>
       <div className="w-full h-auto mt-10">
         <div className="w-full mt-16 mb-20 h-full">
-          <ButtonComponent title="Get Directions" />
+          <Button title="Get Directions" />
         </div>
         <div className="w-auto mx-5 md:mx-0 md:w-full h-full bg-gray-800 flex flex-col justify-evenly lg:flex-row shadow-lg">
           <div

@@ -4,8 +4,8 @@ import AboutCard from './AboutCard'
 
 export default function AboutSection() {
   return (
-    <section id="about">
-      <div className="w-full py-5 h-auto flex lg:flex-row flex-col">
+    <section id="about" className="container py-14 2xl:text-3xl">
+      <div className="w-full h-auto flex lg:flex-row flex-col">
         <div className="w-auto mx-5 md:mx-10 md:w-auto text-center md:text-left lg:pl-8 lg:w-7/12 h-auto">
           <p className="text-3xl md:text-5xl my-5 font-bold font-lora text-white">How it started</p>
           <p className="text-white font-karla py-5">

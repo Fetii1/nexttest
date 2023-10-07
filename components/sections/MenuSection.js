@@ -4,9 +4,9 @@ import MenuProductComponent from './MenuProductComponent'
 
 export default function MenuSection() {
   return (
-    <section id="menu">
+    <section id="menu" className="max-w-4xl mx-auto">
       <div className="w-full h-auto flex flex-col">
-        <div className="w-auto my-5 md:my-10 h-auto">
+        <div className="w-auto my-3 md:my-10 h-auto">
           <h2 className="text-white text-3xl font-bold md:text-5xl text-center font-lora">
             Our Popular Menu
           </h2>
